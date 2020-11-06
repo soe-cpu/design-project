@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" href="image/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+</head>
+<body>
+      <!-- Navbar -->
+      <nav class="navbar menu navbar-expand-lg fixed-top navbar-light bg-light">
+          <a href="index.html"><img src="image/movie.png" height="70px" class="rounded float-center"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse ml-5" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="tv.html">Movies</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="tvserie.html">Series</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Action
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                       <a class="dropdown-item" href="tv.html">Adventure</a>
+                       <a class="dropdown-item" href="tv.html">Comedy</a>
+                       <a class="dropdown-item" href="tv.html">Crime</a>
+                       <a class="dropdown-item" href="tv.html">Animation</a>
+                       <a class="dropdown-item" href="tv.html">Fantasy</a>
+                       <a class="dropdown-item" href="tv.html">Family</a>
+                       <a class="dropdown-item" href="tv.html">Horro</a>
+                       <a class="dropdown-item" href="tv.html">Live Action</a>
+                       <a class="dropdown-item" href="tv.html">School</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+              </ul>
+              <button class="btn btn-sm btn-outline-success my-2 my-sm-0" data-target="#logIn" data-toggle="modal" type="submit">Login</button>
+              <button class="btn btn-sm btn-outline-success my-2 mx-2 my-sm-0" data-target="#sinIn" data-toggle="modal" type="submit">SingUp</button>
+              <form class="float-left">
+              <div class="form-group  my-2">
+                <div class="row mx-2">
+                  <input type="text" placeholder="Search...." class="form-control">
+                  <button type="submit" class="btn btn-success fa fa-search mx-2"></button>
+                </div>
+              </div>
+            </form>
+          </div>
+      </nav>
+      <!-- End Navbar -->
+      <div class="container bg-dark container-t border">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center"><span class="text-dark">Latest Release</span></h2>
+          </div>
+        </div>
+        <div class="row py-2">
+          <div class="slider">
+            <div class="popular-movies">
+              <div class="movie-container">
+                  <div class="image-effect card-1">
+                    <div class="card cards">
+                      <div class="movie-image" >
+                        <a href="" data-target="#info" data-toggle="modal">
+                          <img src="image/y1.jpg" class="card-img-top" alt="Paris" style="height:200px">
+                          <span class="bg-dark top-right checked float-right  py-2 px-2">Movie</span>
+                        </a>
+                        <div class="card-body">
+                            <div class="container-float">
+                                <div class="row">
+                                  <div class="col-9">
+                                    <b class="text-success py-1 float-left">Your Name<span class="text-dark">(2019)</span></b><br>
+                                  </div>
+                                  <div class="col-3">
+                                    <span class="fa fa-star bg-dark checked rounded my-3 py-1 px-1"><span>&nbsp8.0&nbsp</span></span>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="image-effect card-1">
+                    <div class="card cards">
+                      <div class="movie-image" >
+                        <a href="" data-target="#info" data-toggle="modal">
+                          <img src="image/o1.jpg" class="card-img-top" alt="Paris" style="height:200px">
+                          <span class="bg-dark top-right checked py-2 px-2">Series</span>
+                        </a>
+                        <div class="card-body">
+                            <div class="container-float">
+                                <div class="row">
+                                  <div class="col-8">
+                                    <b class="text-success py-1">One Piece<span class="text-dark">(1998)</span></b><br>
+                                  </div>
+                                  <div class="col-4">
+                                    <span class="fa fa-star bg-dark checked rounded float-right my-3 py-1 px-1"><span>&nbsp8.0&nbsp</span></span>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="image-effect card-1">
+                    <div class="card cards">
+                      <div class="movie-image" >
+                        <a href="" data-target="#info" data-toggle="modal">
+                          <img src="image/k1.jpg" class="card-img-top" alt="Paris" style="height:200px">
+                          <span class="bg-dark top-right checked float-right  py-2 px-2">Movie</span>
+                        </a>
+                        <div class="card-body">
+                            <div class="container-float">
+                                <div class="row">
+                                  <div class="col-8">
+                                    <b class="text-success py-1">Tee Divine Fury<span class="text-dark">(2019)</span></b><br>
+                                  </div>
+                                  <div class="col-4">
+                                    <span class="fa fa-star bg-dark checked rounded float-right my-3 py-1 px-1"><span>&nbsp8.0&nbsp</span></span>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="image-effect card-1">
+                    <div class="card cards">
+                      <div class="movie-image" >
+                        <a href="" data-target="#info" data-toggle="modal">
+                          <img src="image/st.jpg" class="card-img-top" alt="Paris" style="height:200px">
+                          <span class="bg-dark top-right checked float-right  py-2 px-2">Series</span>
+                        </a>
+                        <div class="card-body">
+                            <div class="container-float">
+                                <div class="row">
+                                  <div class="col-8">
+                                    <b class="text-success py-1">Star War<span class="text-dark">(2019)</span></b><br>
+                                  </div>
+                                  <div class="col-4">
+                                    <span class="fa fa-star bg-dark checked rounded float-right my-3 py-1 px-1"><span>&nbsp8.0&nbsp</span></span>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="image-effect card-1">
+                    <div class="card cards">
+                      <div class="movie-image" >
+                        <a href="" data-target="#info" data-toggle="modal">
+                          <img src="image/m2.jpg" class="card-img-top" alt="Paris" style="height:200px">
+                          <span class="bg-dark top-right checked float-right  py-2 px-2">Movie</span>
+                        </a>
+                        <div class="card-body">
+                            <div class="container-float">
+                                <div class="row">
+                                  <div class="col-8">
+                                    <b class="text-success py-1">Doraemon<span class="text-dark">(2019)</span></b><br>
+                                  </div>
+                                  <div class="col-4">
+                                    <span class="fa fa-star bg-dark checked rounded float-right my-3 py-1 px-1"><span>&nbsp8.0&nbsp</span></span>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="image-effect card-1">
+                    <div class="card cards">
+                      <div class="movie-image" >
+                        <a href="" data-target="#info" data-toggle="modal">
+                          <img src="image/k2.jpg" class="card-img-top" alt="Paris" style="height:200px">
+                          <span class="bg-dark top-right checked float-right  py-2 px-2">Series</span>
+                        </a>
+                        <div class="card-body">
+                            <div class="container-float">
+                                <div class="row">
+                                  <div class="col-8">
+                                    <b class="text-success py-1">Missing:The Other Side<span class="text-dark">(2019)</span></b><br>
+                                  </div>
+                                  <div class="col-4">
+                                    <span class="fa fa-star bg-dark checked rounded float-right my-3 py-1 px-1"><span>&nbsp8.0&nbsp</span></span>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="image-effect card-1">
+                    <div class="card cards">
+                      <div class="movie-image" >
+                        <a href="" data-target="#info" data-toggle="modal">
+                          <img src="image/m4.jpg" class="card-img-top" alt="Paris" style="height:200px">
+                          <span class="bg-dark top-right checked float-right  py-2 px-2">Movie</span>
+                        </a>
+                        <div class="card-body">
+                            <div class="container-float">
+                                <div class="row">
+                                  <div class="col-8">
+                                    <b class="text-success py-1">Venom<span class="text-dark">(2019)</span></b><br>
+                                  </div>
+                                  <div class="col-4">
+                                    <span class="fa fa-star bg-dark checked rounded float-right my-3 py-1 px-1"><span>&nbsp8.0&nbsp</span></span>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="image-effect card-1">
+                    <div class="card cards">
+                      <div class="movie-image" >
+                        <a href="" data-target="#info" data-toggle="modal">
+                          <img src="image/k5.jpg" class="card-img-top" alt="Paris" style="height:200px">
+                          <span class="bg-dark top-right checked float-right  py-2 px-2">Movie</span>
+                        </a>
+                        <div class="card-body">
+                            <div class="container-float">
+                                <div class="row">
+                                  <div class="col-8">
+                                    <b class="text-success py-1">Your Name<span class="text-dark">(2019)</span></b><br>
+                                  </div>
+                                  <div class="col-4">
+                                    <span class="fa fa-star bg-dark checked rounded float-right my-3 py-1 px-1"><span>&nbsp8.0&nbsp</span></span>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="image-effect card-1">
+                    <div class="card cards">
+                      <div class="movie-image" >
+                        <a href="" data-target="#info" data-toggle="modal">
+                          <img src="image/v.jpg" class="card-img-top" alt="Paris" style="height:200px">
+                          <span class="bg-dark top-right checked float-right  py-2 px-2">Movie</span>
+                        </a>
+                        <div class="card-body">
+                            <div class="container-float">
+                                <div class="row">
+                                  <div class="col-8">
+                                    <b class="text-success py-1">Your Name<span class="text-dark">(2019)</span></b><br>
+                                  </div>
+                                  <div class="col-4">
+                                    <span class="fa fa-star bg-dark checked rounded float-right my-3 py-1 px-1"><span>&nbsp8.0&nbsp</span></span>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="image-effect card-1">
+                    <div class="card cards">
+                      <div class="movie-image" >
+                        <a href="" data-target="#info" data-toggle="modal">
+                          <img src="image/o2.jpg" class="card-img-top" alt="Paris" style="height:200px">
+                          <span class="bg-dark top-right checke float-right  py-2 px-2">Movie</span>
+                        </a>
+                        <div class="card-body">
+                            <div class="container-float">
+                                <div class="row">
+                                  <div class="col-8">
+                                    <b class="text-success py-1">Your Name<span class="text-dark">(2019)</span></b><br>
+                                  </div>
+                                  <div class="col-4">
+                                    <span class="fa fa-star bg-dark checked rounded float-right my-3 py-1 px-1"><span>&nbsp8.0&nbsp</span></span>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 my-1">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                  <li class="page-item"><a class="page-link text-success" href="#"><<</a></li>
+                  <li class="page-item"><a class="page-link text-success" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link text-success" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link text-success" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link text-success" href="#">>></a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+      </div>
+      <!-- movies -->
+      <div class="container border bg-light my-2 py-4"> 
+        <div class="row px-5">
+          <div class="col-xl-9">
+            <div class="row">
+              <div class="col-xl-4 col-md-6 col-lg-4 col-xs-6 col-sm-12 pt-3">
+                <div class="card cards">
+                  <div class="flip-box">
+                    <div class="flip-box-inner">
+                      <div class="flip-box-front">
+                        <img src="image/y1.jpg" class="card-img-top menu" alt="Paris" style="height:200px">
+                        <span class="bg-dark bottom-right checked rounded float-right  py-2 px-2">Movie</span>
+                      </div>
+                      <div class="flip-box-back">
+                        <img src="image/y.jpg" class="card-img-top menu" alt="Paris" style="height:200px">
+                        <span class="bg-dark bottom-right checked rounded float-right  py-2 px-2">Movie</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="container-float">
+                      <div class="row">
+                        <b class="text-success py-1">Your Name<span class="text-dark">(2019)</span></b><br>
+                        <p>What an amazing movies.What an amazing...<a href="" data-target="#info" data-toggle="modal">seemore</a></p>
+                      </div>
+                      <div class="row">
+                        <div class="col-6 my-3">
+                          <a class="button py-2 my-1" href="tvshow.html">Play<i class="mx-2 fa fa-play"></i></a>
+                        </div>
+                        <div class="col-6">
+                          <span class="fa fa-star bg-dark checked rounded float-right my-3 py-1 px-1"><span>&nbsp8.0&nbsp</span></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-6 col-lg-4 col-xs-6 col-sm-12 pt-3">
+                <div class="card cards">
+                  <div class="flip-box">
+                    <div class="flip-box-inner">
+                      <div class="flip-box-front">
+                        <img src="image/m3.jpg" class="card-img-top menu" alt="Paris" style="height:200px">
+                        <span class="bg-dark bottom-right checked rounded float-right  py-2 px-2">Movie</span>
+                      </div>
+                      <div class="flip-box-back">
+                        <img src="image/adv.jpg" class="card-img-top menu" alt="Paris" style="height:200px">
+                        <span class="bg-dark bottom-right checked rounded float-right  py-2 px-2">Movie</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">             
+                    <div class="container-float">
+                      <div class="row">
+                        <b class="text-success py-1">End Game<span class="text-dark">(2019)</span></b><br>
+                        <p>What an amazing movies.What an amazing...<a href="" data-target="#info" data-toggle="modal">seemore</a></p>
+                      </div>
+                      <div class="row">
+                        <div class="col-6 my-3">
+                          <a class="button py-2 my-1" href="tvshow.html">Play<i class="mx-2 fa fa-play"></i></a>
+                        </div>
+                        <div class="col-6">
+                          <span class="fa fa-star bg-dark checked rounded float-right my-3 py-1 px-1"><span>&nbsp8.0&nbsp</span></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-6 col-lg-4 col-xs-6 col-sm-12 pt-3">
+                <div class="card cards">
+                  <div class="flip-box">
+                    <div class="flip-box-inner">
+                      <div class="flip-box-front">
+                        <img src="image/o2.jpg" class="card-img-top menu" alt="Paris" style="height:200px">
+                        <span class="bg-dark bottom-right checked rounded float-right  py-2 px-2">Series</span>
+                      </div>
+                      <div class="flip-box-back">
+                        <img src="image/o3.jpg" class="card-img-top menu" alt="Paris" style="height:200px">
+                        <span class="bg-dark bottom-right checked rounded float-right  py-2 px-2">Series</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="container-float">
+                      <div class="row">
+                        <b class="text-success py-1">One Piece<span class="text-dark">(1998)</span></b><br>
+                        <p>What an amazing movies.What an amazing...<a href="" data-target="#info" data-toggle="modal">seemore</a></p>
+                      </div>
+                      <div class="row">
+                        <div class="col-6 my-3">
+                          <a class="button py-2 my-1" href="tvshow.html">Play<i class="mx-2 fa fa-play"></i></a>
+                        </div>
+                        <div class="col-6">
+                          <span class="fa fa-star bg-dark checked rounded float-right my-3 py-1 px-1"><span>&nbsp8.0&nbsp</span></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-6 col-lg-4 col-xs-6 col-sm-12 pt-3">
+                <div class="card cards">
+                  <div class="flip-box">
+                    <div class="flip-box-inner">
+                      <div class="flip-box-front">
+                        <img src="image/k1.jpg" class="card-img-top menu" alt="Paris" style="height:200px">
+                        <span class="bg-dark bottom-right checked rounded float-right  py-2 px-2">Movie</span>
+                      </div>
+                      <div class="flip-box-back">
+                        <img src="image/k.jpg" class="card-img-top menu" alt="Paris" style="height:200px">
+                        <span class="bg-dark bottom-right checked rounded float-right  py-2 px-2">Movie</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="container-float">
+                      <div class="row">
+                        <b class="text-success py-1">The Divine Fury<span class="text-dark">(2019)</span></b><br>
+                        <p>What an amazing movies.What an amazing...<a href="" data-target="#info" data-toggle="modal">seemore</a></p>
+                      </div>
+                      <div class="row">
+                        <div class="col-6 my-3">
+                          <a class="button py-2 my-1" href="tvshow.html">Play<i class="mx-2 fa fa-play"></i></a>
+                        </div>
+                        <div class="col-6">
+                          <span class="fa fa-star bg-dark checked rounded float-right my-3 py-1 px-1"><span>&nbsp8.0&nbsp</span></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-6 col-lg-4 col-xs-6 col-sm-12 pt-3">
+                <div class="card cards">
+                  <div class="flip-box">
+                    <div class="flip-box-inner">
+                      <div class="flip-box-front">
+                        <img src="image/o1.jpg" class="card-img-top menu" alt="Paris" style="height:200px">
+                        <span class="bg-dark bottom-right checked rounded float-right  py-2 px-2">Series</span>
+                      </div>
+                      <div class="flip-box-back">
+                        <img src="image/o.jpg" class="card-img-top menu" alt="Paris" style="height:200px">
+                        <span class="bg-dark bottom-right checked rounded float-right  py-2 px-2">Series</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">                   
+                    <div class="container-float">
+                      <div class="row">
+                        <b class="text-success py-1">Stampede<span class="text-dark">(2019)</span></b><br>
+                        <p>What an amazing movies.What an amazing...<a href="" data-target="#info" data-toggle="modal">seemore</a></p>
+                      </div>
+                      <div class="row">
+                        <div class="col-6 my-3">
+                          <a class="button py-2 my-1" href="tvshow.html">Play<i class="mx-2 fa fa-play"></i></a>
+                        </div>
+                        <div class="col-6">
+                          <span class="fa fa-star bg-dark checked rounded float-right my-3 py-1 px-1"><span>&nbsp8.0&nbsp</span></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-6 col-lg-4 col-xs-6 col-sm-12 pt-3">
+                <div class="card cards">
+                  <div class="flip-box">
+                    <div class="flip-box-inner">
+                      <div class="flip-box-front">
+                        <img src="image/k2.jpg" class="card-img-top menu" alt="Paris" style="height:200px">
+                        <span class="bg-dark bottom-right checked rounded float-right  py-2 px-2">Movie</span>
+                      </div>
+                      <div class="flip-box-back">
+                        <img src="image/k3.jpg" class="card-img-top menu" alt="Paris" style="height:200px">
+                        <span class="bg-dark bottom-right checked rounded float-right  py-2 px-2">Movie</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="container-float">
+                      <div class="row">
+                        <b class="text-success py-1">Missing:The Other Side<span class="text-dark">(2019)</span></b><br>
+                        <p>What an amazing movies.What an amazing...<a href="" data-target="#info" data-toggle="modal">seemore</a></p>
+                      </div>
+                      <div class="row">
+                        <div class="col-6 my-3">
+                          <a class="button py-2 my-1" href="tvshow.html">Play<i class="mx-2 fa fa-play"></i></a>
+                        </div>
+                        <div class="col-6">
+                          <span class="fa fa-star bg-dark checked rounded float-right my-3 py-1 px-1"><span>&nbsp8.0&nbsp</span></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-6 col-lg-4 col-xs-6 col-sm-12 pt-3">
+                <div class="card cards">
+                  <div class="flip-box">
+                    <div class="flip-box-inner">
+                      <div class="flip-box-front">
+                        <img src="image/m4.jpg" class="card-img-top menu" alt="Paris" style="height:200px">
+                        <span class="bg-dark bottom-right checked rounded float-right  py-2 px-2">Series</span>
+                      </div>
+                      <div class="flip-box-back">
+                        <img src="image/st.jpg" class="card-img-top menu" alt="Paris" style="height:200px">
+                        <span class="bg-dark bottom-right checked rounded float-right  py-2 px-2">Series</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="container-float">
+                      <div class="row">
+                        <b class="text-success py-1">Star War<span class="text-dark">(2019)</span></b><br>
+                        <p>What an amazing movies.What an amazing...<a href="" data-target="#info" data-toggle="modal">seemore</a></p>
+                      </div>
+                      <div class="row">
+                        <div class="col-6 my-3">
+                          <a class="button py-2 my-1" href="tvshow.html">Play<i class="mx-2 fa fa-play"></i></a>
+                        </div>
+                        <div class="col-6">
+                          <span class="fa fa-star bg-dark checked rounded float-right my-3 py-1 px-1"><span>&nbsp8.0&nbsp</span></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-6 col-lg-4 col-xs-6 col-sm-12 pt-3">
+                <div class="card cards">
+                  <div class="flip-box">
+                    <div class="flip-box-inner">
+                      <div class="flip-box-front">
+                        <img src="image/k4.jpg" class="card-img-top menu" alt="Paris" style="height:200px">
+                        <span class="bg-dark bottom-right checked rounded float-right  py-2 px-2">Series</span>
+                      </div>
+                      <div class="flip-box-back">
+                        <img src="image/k5.jpg" class="card-img-top menu" alt="Paris" style="height:200px">
+                        <span class="bg-dark bottom-right checked rounded float-right  py-2 px-2">Series</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="container-float">
+                      <div class="row">
+                        <b class="text-success py-1">Vagabond<span class="text-dark">(2019)</span></b><br>
+                        <p>What an amazing movies.What an amazing...<a href="" data-target="#info" data-toggle="modal">seemore</a></p>
+                      </div>
+                      <div class="row">
+                        <div class="col-6 my-3">
+                          <a class="button py-2 my-1" href="tvshow.html">Play<i class="mx-2 fa fa-play"></i></a>
+                        </div>
+                        <div class="col-6">
+                          <span class="fa fa-star bg-dark checked rounded float-right my-3 py-1 px-1"><span>&nbsp8.0&nbsp</span></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-6 col-lg-4 col-xs-6 col-sm-12 pt-3">
+                <div class="card cards">
+                  <div class="flip-box">
+                    <div class="flip-box-inner">
+                      <div class="flip-box-front">
+                        <img src="image/v.jpg" class="card-img-top menu" alt="Paris" style="height:200px">
+                        <span class="bg-dark bottom-right checked rounded float-right  py-2 px-2">Movie</span>
+                      </div>
+                      <div class="flip-box-back">
+                        <img src="image/v1.jpg" class="card-img-top menu" alt="Paris" style="height:200px">
+                        <span class="bg-dark bottom-right checked rounded float-right  py-2 px-2">Movie</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="container-float">
+                      <div class="row">
+                        <b class="text-success py-1">Venom<span class="text-dark">(2019)</span></b><br>
+                        <p>What an amazing movies.What an amazing...<a href="" data-target="#info" data-toggle="modal">seemore</a></p>
+                      </div>
+                      <div class="row">
+                        <div class="col-6 my-3">
+                          <a class="button py-2 my-1" href="tvshow.html">Play<i class="mx-2 fa fa-play"></i></a>
+                        </div>
+                        <div class="col-6">
+                          <span class="fa fa-star bg-dark checked rounded float-right my-3 py-1 px-1"><span>&nbsp8.0&nbsp</span></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 d-none d-xl-block pt-3">
+            <div class="row mx-4">
+              <h1 class="text-dark">Category</h1>
+              <div class="example border">
+                <ul class="list-group list-group-flus  bg-secondary">
+                  <li class="list-group-item"><a href="">Action</a><span class="bg-dark checked rounded float-right">43</span></li>
+                  <li class="list-group-item"><a href="">Adventure</a><span class="bg-dark checked rounded float-right">30</span></li>
+                  <li class="list-group-item"><a href="">Comedy</a><span class="bg-dark checked rounded float-right">20</span></li>
+                  <li class="list-group-item"><a href="">Crime</a><span class="bg-dark checked rounded float-right">10</span></li>
+                  <li class="list-group-item"><a href="">Animation</a><span class="bg-dark checked rounded float-right">43</span></li>
+                  <li class="list-group-item"><a href="">Fantasy</a><span class="bg-dark checked rounded float-right">43</span></li>
+                  <li class="list-group-item"><a href="">Family</a><span class="bg-dark checked rounded float-right">43</span></li>
+                  <li class="list-group-item"><a href="">Horro</a><span class="bg-dark checked rounded float-right">43</span></li>
+                  <li class="list-group-item"><a href="">Live Action</a><span class="bg-dark checked rounded float-right">43</span></li>
+                  <li class="list-group-item"><a href="">School</a><span class="bg-dark checked rounded float-right">43</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="row mx-4 my-4"> 
+              <div class="example border">
+                <div class="col-12 my-1">
+                  <button type="button" class="btn btn-success btn-sm btn-block">2010</button>
+                </div>
+                <div class="col-12 my-1">
+                  <button type="button" class="btn btn-success btn-sm btn-block">2011</button>
+                </div>
+                <div class="col-12 my-1">
+                  <button type="button" class="btn btn-success btn-sm btn-block">2012</button>
+                </div>
+                <div class="col-12 my-1">
+                  <button type="button" class="btn btn-success btn-sm btn-block">2013</button>
+                </div>
+                <div class="col-12 my-1">
+                  <button type="button" class="btn btn-success btn-sm btn-block">2010</button>
+                </div>
+                <div class="col-12 my-1">
+                  <button type="button" class="btn btn-success btn-sm btn-block">2011</button>
+                </div>
+                <div class="col-12 my-1">
+                  <button type="button" class="btn btn-success btn-sm btn-block">2012</button>
+                </div>
+                <div class="col-12 my-1">
+                  <button type="button" class="btn btn-success btn-sm btn-block">2013</button>
+                </div>
+              </div>
+            </div>
+            <div class="row mx-4 my-4">
+              <div class="d-none d-xl-block">
+                <h1 class="text-dark">Suggesstion</h1>
+                <div class="col-12 my-2 card-1">
+                  <a href="" data-target="#info" data-toggle="modal">
+                    <div class="row border cards">
+                      <div class="col-4 py-2">
+                        <img src="image/m3.jpg" class="rounded zoom" width="60" height="60">
+                      </div>
+                      <div class="col-8 py-2">
+                        <span>End Game</span><br>
+                        <span>(2019)</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-12 my-2 card-1">
+                  <a href="" data-target="#info" data-toggle="modal">
+                    <div class="row border cards">
+                      <div class="col-4 py-2">
+                        <img src="image/o2.jpg" class="rounded zoom" width="60" height="60">
+                      </div>
+                      <div class="col-8 py-2">
+                        <span>One Piece</span><br>
+                        <span>(1998)</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-12 my-2 card-1">
+                  <a href="" data-target="#info" data-toggle="modal">
+                    <div class="row border cards">
+                      <div class="col-4 py-2">
+                        <img src="image/st.jpg" class="rounded zoom" width="60" height="60">
+                      </div>
+                      <div class="col-8 py-2">
+                        <span>Star War</span><br>
+                        <span>(1998)</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-12 my-2 card-1">
+                  <a href="" data-target="#info" data-toggle="modal">
+                    <div class="row border cards">
+                      <div class="col-4 py-2">
+                        <img src="image/k.jpg" class="rounded zoom" width="60" height="60">
+                      </div>
+                      <div class="col-8 py-2">
+                        <span>The Divine Fury</span><br>
+                        <span>(1998)</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-12 my-2 card-1">
+                  <a href="" data-target="#info" data-toggle="modal">
+                    <div class="row border cards">
+                      <div class="col-4 py-2">
+                        <img src="image/k2.jpg" class="rounded zoom" width="60" height="60">
+                      </div>
+                      <div class="col-8 py-2">
+                        <span>Missing</span><br>
+                        <span>(2020)</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-12 my-2 card-1">
+                  <a href="" data-target="#info" data-toggle="modal">
+                    <div class="row border cards">
+                      <div class="col-4 py-2">
+                        <img src="image/st.jpg" class="rounded zoom" width="60" height="60">
+                      </div>
+                      <div class="col-8 py-2">
+                        <span>Star War</span><br>
+                        <span>(1998)</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>       
+        </div>
+        <div class="row pt-4">
+          <div class="col-xl-12 mx-5">
+            <nav aria-label="Page navigation example">
+              <ul class="pagination">
+                <li class="page-item"><a class="page-link text-success" href="#">Previous</a></li>
+                <li class="page-item"><a class="page-link text-success" href="#">1</a></li>
+                <li class="page-item"><a class="page-link text-success" href="#">2</a></li>
+                <li class="page-item"><a class="page-link text-success" href="#">3</a></li>
+                <li class="page-item"><a class="page-link text-success" href="#">Next</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <!-- footer -->
+      <!-- Footer-->
+        <footer class="footer text-center bg-dark">
+            <div class="container">
+                <div class="row">
+                    <!-- Footer Location-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Location</h4>
+                        <p class="lead mb-0">
+                            2215 John Daniel Drive
+                            <br />
+                            Clark, MO 65243
+                        </p>
+                    </div>
+                    <!-- Footer Social Icons-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Around the Web</h4>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
+                    </div>
+                    <!-- Footer About Text-->
+                    <div class="col-lg-4">
+                        <h4 class="text-uppercase mb-4">About Freelancer</h4>
+                        <p class="lead mb-0">
+                            Freelance is a free to use, MIT licensed Bootstrap theme created by
+                            <a href="http://startbootstrap.com">Start Bootstrap</a>
+                            .
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Copyright Section-->
+        <div class="copyright py-4 text-center text-white">
+            <div class="container"><small>Copyright © Your Website 2020</small></div>
+        </div>
+      <!-- Login -->
+      <div class="modal fade" id="logIn">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="text-success">Sign In</h3>
+              <!-- <button class="close" data-dismiss="modal">
+                <span>&times;</span>
+              </button> -->
+            </div>
+            <div class="modal-body">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="image/movie.png" class="img-fluid menu">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <form>
+                        <div class="form-row">
+                          <div class="form-group col-md-12">
+                            <label for="inputEmail4" class="text-success">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                          </div>
+                          <div class="form-group col-md-12">
+                            <label for="inputPassword4" class="text-success">Password</label>
+                            <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                          </div>
+                        </div>
+                        <button class="btn btn-outline-success">Login</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-outline-danger" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- singIn -->
+      <div class="modal fade" id="sinIn">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="text-success">Sign In</h3>
+              <!-- <button class="close" data-dismiss="modal">
+                <span>&times;</span>
+              </button> -->
+            </div>
+            <div class="modal-body">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="image/movie.png" class="img-fluid menu" height="300px">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <form>
+                        <div class="form-row">
+                          <div class="form-group col-md-12">
+                            <label for="inputName" class="text-success">Name</label>
+                            <input type="name" class="form-control" id="inputName4" placeholder="Username">
+                          </div>
+                          <div class="form-group col-md-12">
+                            <label for="inputEmail4" class="text-success">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                          </div>
+                          <div class="form-group col-md-12">
+                            <label for="inputPassword4" class="text-success">Password</label>
+                            <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                          </div>
+                          <div class="form-group col-md-12">
+                            <label for="inputRepassword4" class="text-success">Repassword</label>
+                            <input type="password" class="form-control" id="inputRepassword4" placeholder="Repassword">
+                          </div>
+                        </div>
+                        <button class="btn btn-outline-success">Sign Up</button>
+                        <!-- <button class="btn btn-outline-success" data-dismiss="modal">Cancel</button> -->
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-outline-danger" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- info box -->
+      <div class="modal fade" id="info">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="text-success">Movie Information</h3>
+              <button class="close" data-dismiss="modal">
+                <span>&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-4 py-2">
+                    <img src="image/m1.jpg" class="img-fluid menu">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="row">
+                      <div class="col-6">
+                        <h4>Movie Name</h4>
+                        </div>
+                        <div class="col-6">
+                          <span class="fa fa-star bg-dark checked rounded float-right  py-2 px-1"><span>&nbsp8.0&nbsp</span></span>
+                        </div>
+                      </div>
+                      <div class="row py-3">
+                        <p>(Japanese: 君の名は。, Hepburn: Kimi no Na wa.) is a 2016 Japanese animated romantic fantasy film written and directed by Makoto Shinkai, and produced by CoMix Wave Films. ... Your Name tells the story of a high school boy in Tokyo and a high school girl in a rural town, who suddenly and inexplicably begin to swap bodies.</p>
+                      </div>
+                      <div class="row">
+                        <div class="col-12">
+                         <div class="form-group text-right">
+                          <a href="tvshow.html" class="button py-2 my-1">Play<i class="mx-2 fa fa-play"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
+

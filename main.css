@@ -1,0 +1,44 @@
+body {
+  font-size: 16px;
+  margin: 1em;
+}
+
+p {
+  margin-right: 2rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+nav {
+  position: fixed;
+  top: 50%;
+  bottom: auto;
+  transform: translateY(-50%);
+  right: 0;
+}
+
+.nav-element {
+  text-align: right;
+  cursor: pointer;
+  margin: 1rem;
+  color: #aaa;
+  transition: color 0.25s;
+}
+
+.navbar-active {
+  color: #000;
+}
+
+.nav-label {
+  opacity: 0;
+  transition: opacity 0.25s;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+li:hover .nav-label {
+  opacity: 1;
+  background-color: #fff;
+}
